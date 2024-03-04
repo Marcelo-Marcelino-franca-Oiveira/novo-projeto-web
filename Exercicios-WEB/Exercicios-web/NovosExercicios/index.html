@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+        const nome=prompt('Digite seu nome completo:');
+        document.body.innerHTML+=`O seu nome completo é:<strong> ${nome}<strong/><br />`;
+        document.body.innerHTML+=`O seu nome completo possui: ${nome.length} letras<br />`;
+        document.body.innerHTML+=`O seu nome começa com a Letra: ${nome.charAt(0)} <br />`;
+        document.body.innerHTML+=`A segunda letra do seu nome é: ${nome.charAt(1)} <br />`;
+        document.body.innerHTML+=`O seu nome termina com a Letra: ${nome.slice(-1)} <br />`;
+        document.body.innerHTML+=`As ultimas 3 letras do seu nome são: ${nome.slice(-3)} <br />`;
+        document.body.innerHTML+=`Seu nome com letras maiusculas fica assim: ${nome.toUpperCase()} <br />`;
+        document.body.innerHTML+=`Seu nome com letras minusculas fica dessa forma: ${nome.toLowerCase()} <br />`;
+        document.body.innerHTML+=`As palavras do seu nome são: ${nome.split(' ')} <br />`;
+        document.body.innerHTML+=`Seu nome no femino: ${nome.replace(/o/g,'a')} <br />`;
+        document.body.innerHTML+=`Seu nome no masculino: ${nome.replace(/a/g,'o')} <br />`;
+        document.body.innerHTML+=`Qual o seu primeiro indice de letra "A" do seu nome: ${nome.indexOf('a')} <br />`;
+        document.body.innerHTML+=`Qual o seu ultimo indice de letra "A" do seu nome: ${nome.lastIndexOf('a')} <br />`;
+        
+
+    </script>
+    
+</body>
+</html>
